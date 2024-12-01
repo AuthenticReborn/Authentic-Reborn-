@@ -1524,7 +1524,7 @@ visual_functions = {
 
 
         watermark_color_array = lua.funcs.create_color_array(lua_color[1], lua_color[2], lua_color[3], "Authentic [reborn]")
-        color_array_string = string.format("\a%se\a%sp\a%sh\a%se\a%sm\a%se\a%sr\a%sa\a%sl [reborn]", lua.funcs.rgba_hex(unpack(watermark_color_array[1])), lua.funcs.rgba_hex(unpack(watermark_color_array[2])), lua.funcs.rgba_hex(unpack(watermark_color_array[3])), lua.funcs.rgba_hex(unpack(watermark_color_array[4])), lua.funcs.rgba_hex(unpack(watermark_color_array[5])), lua.funcs.rgba_hex(unpack(watermark_color_array[6])),  lua.funcs.rgba_hex(unpack(watermark_color_array[7])),  lua.funcs.rgba_hex(unpack(watermark_color_array[8])),  lua.funcs.rgba_hex(unpack(watermark_color_array[9])) ) .. lua.funcs.hex({lua_color[1], lua_color[2], lua_color[3]})
+        color_array_string = string.format("\a%sA\a%su\a%st\a%sh\a%se\a%sn\a%st\a%si\a%sc [reborn]", lua.funcs.rgba_hex(unpack(watermark_color_array[1])), lua.funcs.rgba_hex(unpack(watermark_color_array[2])), lua.funcs.rgba_hex(unpack(watermark_color_array[3])), lua.funcs.rgba_hex(unpack(watermark_color_array[4])), lua.funcs.rgba_hex(unpack(watermark_color_array[5])), lua.funcs.rgba_hex(unpack(watermark_color_array[6])),  lua.funcs.rgba_hex(unpack(watermark_color_array[7])),  lua.funcs.rgba_hex(unpack(watermark_color_array[8])),  lua.funcs.rgba_hex(unpack(watermark_color_array[9])) ) .. lua.funcs.hex({lua_color[1], lua_color[2], lua_color[3]})
 
         renderer.text(_x - renderer.measure_text("b", "Authentic [reborn]") / 2, _y, 220, 220, 220, 255, "bo", 0, color_array_string)
     end,
